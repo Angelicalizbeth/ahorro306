@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips de ahorro</title>
+  <style>
+    body {
+      font-family: Gabriola, cursive;
+      background-color: rgb(236, 128, 236);
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      color: rgb(132, 17, 209);
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: rgb(132, 17, 209);
+      padding: 8px 15px;
+      border-radius: 10px;
+      margin: 0 5px;
+    }
+    nav a:hover {
+      background-color: rgb(171, 103, 224);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tips para mejorar tus hábitos de ahorro</h1>
+    <nav>
+      <a href="{{ url_for('ahorro') }}">Registro de Ahorro</a>
+    <a href="{{ url_for('tips_ahorro') }}">Tips de Ahorro</a>
+    <a href="{{ url_for('gastos_view') }}">Control de Gastos</a>
+  </header>
+
+  <main>
+    <h2>Tips</h2>
+    <ul>
+      <li>Registra todos tus ingresos y gastos.</li>
+      <li>Ahorra una parte de tus ingresos cada mes.</li>
+      <li>Evita las compras impulsivas.</li>
+      <li>Establece metas financieras a corto y largo plazo.</li>
+      <li>Compara precios.</li>
+    </ul>
+  </main>
+</body>
+</html>

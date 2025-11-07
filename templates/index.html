@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: Gabriola, cursive;
+        background-color: rgb(236, 128, 236);
+        text-align: center;
+        padding: 50px;
+    }
+
+    h1 {
+        color: rgb(132, 17, 209);
+    }
+
+    h3 {
+        color: black;
+    }
+
+    p {
+        color: black;
+        font-size: 20px;
+    }
+
+    .botones {
+        margin-top: 30px;
+    }
+
+    .botones a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(132, 17, 209);
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: 10px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .botones a:hover {
+        background-color: rgb(171, 103, 224);
+    }
+</style>
+
+<h1>Control de Gastos y Hábitos de Ahorro</h1>
+<h3>Grupo: 306</h3>
+<h3>Integrantes: Estrella, Karen, Ailin, Lizbeth, Kimberly, Donnovan, Adrián</h3>
+<h3>Materia: Emplea Frameworks para el Desarrollo de Software</h3>
+
+<p>Bienvenido a tu sitio web donde podrás organizar tus finanzas, controlar tus gastos y mejorar tus hábitos de ahorro.</p>
+
+<div class="botones">
+    <a href="{{ url_for('ahorro') }}">Registro de Ahorro</a>
+    <a href="{{ url_for('tips_ahorro') }}">Tips de Ahorro</a>
+    <a href="{{ url_for('gastos_view') }}">Control de Gastos</a>
+</div>
+{% endblock %}
